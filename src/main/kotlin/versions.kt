@@ -7,7 +7,7 @@ const val COROUTINES_NATIVE_VERSION = "1.3.9-native-mt"
 const val COROUTINES_VERSION = COROUTINES_NATIVE_VERSION
 
 //https://developer.android.com/jetpack/androidx/releases/compose
-const val ANDROID_COMPOSE_VERSION = "1.0.0-alpha01"
+const val ANDROID_COMPOSE_VERSION = "1.0.0-alpha03"
 //const val ANDROID_KOTLIN_COMPILER_VERSION = "1.4.0-dev-withExperimentalGoogleExtensions-20200720"
 //const val ANDROID_KOTLIN_COMPILER_VERSION = "1.4.0"
 val ANDROID_KOTLIN_COMPILER_VERSION = null
