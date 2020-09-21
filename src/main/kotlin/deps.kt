@@ -74,3 +74,9 @@ inline fun KotlinDependencyHandler.implementationReact() {
         implementation(it)
     }
 }
+
+inline fun KotlinDependencyHandler.apiReact() {
+    reactLibs.forEach {
+        api(it)
+    }
+}
