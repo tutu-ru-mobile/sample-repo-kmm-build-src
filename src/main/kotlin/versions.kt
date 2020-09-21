@@ -17,3 +17,6 @@ const val ANDROID_BUILD_TOOLS_VERSION = "29.0.2"
 const val ANDROID_MIN_SDK = 21
 const val ANDROID_TARGET_SDK = 21
 const val ANDROID_APP_COMPAT = "1.1.0"
+
+val REACT_VERSION = "16.13.1"
+val KOTLIN_WRAPPER_VERSION = "pre.110-kotlin-1.4.0"
