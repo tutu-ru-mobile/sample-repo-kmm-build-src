@@ -25,6 +25,15 @@ val fullComposeLibs = listOf(
     "androidx.ui:ui-tooling:$ANDROID_COMPOSE_VERSION"
 )
 
+val reactLibs = listOf(
+    "org.jetbrains.kotlinx:kotlinx-html:0.7.2",
+    "org.jetbrains:kotlin-react:$REACT_VERSION-$KOTLIN_WRAPPER_VERSION",
+    "org.jetbrains:kotlin-react-dom:$REACT_VERSION-$KOTLIN_WRAPPER_VERSION",
+    "org.jetbrains:kotlin-styled:1.0.0-$KOTLIN_WRAPPER_VERSION",
+    "org.jetbrains:kotlin-extensions:1.0.1-$KOTLIN_WRAPPER_VERSION",
+    "org.jetbrains:kotlin-css-js:1.0.0-$KOTLIN_WRAPPER_VERSION"
+)
+
 inline fun KotlinDependencyHandler.implementationCompose() {
     fullComposeLibs.forEach {
         implementation(it)
@@ -55,10 +64,13 @@ inline fun Project.fixComposeWithWorkaround() {
 }
 
 fun DependencyHandler.implementationReact() {
-    implementation("org.jetbrains.kotlinx:kotlinx-html:0.7.2")
-    implementation("org.jetbrains:kotlin-react:$REACT_VERSION-$KOTLIN_WRAPPER_VERSION")
-    implementation("org.jetbrains:kotlin-react-dom:$REACT_VERSION-$KOTLIN_WRAPPER_VERSION")
-    implementation("org.jetbrains:kotlin-styled:1.0.0-$KOTLIN_WRAPPER_VERSION")
-    implementation("org.jetbrains:kotlin-extensions:1.0.1-$KOTLIN_WRAPPER_VERSION")
-    implementation("org.jetbrains:kotlin-css-js:1.0.0-$KOTLIN_WRAPPER_VERSION")
+    reactLibs.forEach {
+        implementation(it)
+    }
+}
+
+inline fun KotlinDependencyHandler.implementationReact() {
+    reactLibs.forEach {
+        implementation(it)
+    }
 }
