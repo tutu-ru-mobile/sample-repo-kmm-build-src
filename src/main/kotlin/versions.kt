@@ -5,6 +5,7 @@ const val KOTLIN_VERSION = "1.4.10"
 //const val COROUTINES_VERSION = "1.3.9"
 const val COROUTINES_NATIVE_VERSION = "1.3.9-native-mt"
 const val COROUTINES_VERSION = COROUTINES_NATIVE_VERSION
+const val KTOR_VERSION = "1.4.0"
 
 //https://developer.android.com/jetpack/androidx/releases/compose
 const val ANDROID_COMPOSE_VERSION = "1.0.0-alpha03"
