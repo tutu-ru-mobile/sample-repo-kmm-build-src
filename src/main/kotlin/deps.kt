@@ -80,3 +80,9 @@ inline fun KotlinDependencyHandler.apiReact() {
         api(it)
     }
 }
+
+inline fun org.jetbrains.kotlin.gradle.plugin.KotlinSourceSet.addJvmSourceDirs() {
+    kotlin.srcDir("src/telegramMain/kotlin")
+    kotlin.srcDir("src/ideaMain/kotlin")
+    kotlin.srcDir("src/consoleMain/kotlin")
+}
